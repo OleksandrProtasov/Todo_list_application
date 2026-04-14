@@ -1,72 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #3f3c3c;
-  color: white;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 15% 15%, rgba(0, 194, 212, 0.2) 0%, transparent 45%),
+    radial-gradient(circle at 82% 10%, rgba(122, 92, 255, 0.22) 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(64, 41, 109, 0.34) 0%, transparent 50%), #050816;
 }
 
-.App {
-  text-align: center;
+#root {
+  min-height: 100vh;
 }
 
-.taskBg {
-  background-color: #555;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 10px 140px 10px 15px;
-  text-align: left;
-  font-size: 22px;
-  position: relative;
+.app-surface {
+  border-radius: 24px !important;
+  background: rgba(13, 20, 44, 0.82) !important;
+  border: 1px solid rgba(170, 190, 255, 0.2) !important;
+  box-shadow: 0 24px 80px rgba(4, 8, 22, 0.58) !important;
+  backdrop-filter: blur(14px);
 }
 
-.taskBg div {
-  display: flex;
-  align-items: center;
+.task-check {
+  color: #8ca0e8 !important;
 }
 
-.taskBg .done .taskText {
-  text-decoration: line-through;
-  opacity: 0.3;
-}
-.taskBg .taskText {
-  flex : 1;
-}
-
-.taskNumber {
-  color: #999;
-  border: 1px solid #999;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  text-align: center;
-  font-size: 14px;
-  margin-right: 8px;
-  align-items: center;
-  justify-content: center;
-}
-
-.taskBg .iconsWrap {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
-  width: auto;
-  display: inline-block;
-}
-
-.taskBg .iconsWrap span {
-  display: inline-block;
-  margin: 0px 10px 0 10px;
-  cursor: pointer;
-  color: lightgreen;
-}
-
-.taskBg .iconsWrap span:hover {
-  color:darkorange;
-}
-.mr-20 {
-  margin-right: 20px;
-}
-.header{
-  margin-top: 40px;
-  margin-bottom: 40px;
+.task-check.Mui-checked {
+  color: #52edc4 !important;
 }
